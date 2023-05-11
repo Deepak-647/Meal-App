@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: goldenrod;
+  }
+  body{
+    height: 100vh;
+    background-image: url('./media/bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    
+    
+  }
+ 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,.5);
+    align-items: center;
+    height: 10vh;
+}
+.navbar  .left-side .heading{
+ display: flex;
+
+}
+.navbar .left-side .heading h1{
+    color: #fff;
+}
+.navbar .left-side .heading h1 span{
+    color:darkorange;
+}
+.navbar .right-side .favourite-list-btn{
+    background-color: transparent;
+    border: none;
+}
+.navbar .right-side .favourite-list-btn:hover{
+    cursor: pointer;
+}
+
+
+/* Favourire List */
+.fav-list{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    transform: translateX(100%);
+    animation: slide-in 0.5s forwards;
+    display: none;
+}
+@keyframes slide-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+.fav-list .fav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: darkorange;
+    height: 10%;
+}
+.fav-list .fav-header h2{
+    color: white;
+}
+.fav-list .fav-header .fav-close-btn {
+   background-color: transparent;
+   border: none;
+}
+.fav-list .fav-header .fav-close-btn:hover{
+    cursor: pointer;
+}
+.fav-list .fav-header .fav-close-btn i{
+    font-size: 1.5rem;
+    color: white;
+}
+.fav-list .fav-list-body{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+  
+ 
+  
+}
+.fav-list .fav-list-body .favlist-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange;
+}
+.fav-list .fav-list-body .favlist-card .img-thumb img{
+ height: 150px;
+ margin: 10px 10px;
+ 
+}
+.fav-list .fav-list-body .favlist-card .unfav-btn{
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+}
+.fav-list .fav-list-body .favlist-card .unfav-btn:hover{
+    cursor: pointer;
+}
+.fav-list .fav-list-body .favlist-card .unfav-btn i{
+    font-size: 1.2rem;
+
+}
+.fav-list .fav-list-body .fav-error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: orange;
+    width: 100%;
+    
+    
+}
+.fav-list .fav-list-body .fav-error span{
+    font-size: 1.5rem;
+}
+.fav-list .fav-list-body .fav-error p{
+    font-size: 1.2rem;
+}
+
+/* Results */
+.search-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color: #fff;
+    height: 15vh;
+
+}
+.search-container h1,h2{
+    margin: 10px 0;
+}
+.search-container .search-box{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    height: 50px;
+    border-radius: 20px;
+    
+}
+.search-container .search-box input{
+    width: 80%;
+     padding: 10px 0;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+
+}
+.search-container .search-box .Search-btn{
+border: none;
+background-color: transparent;
+}
+.search-container .search-box .Search-btn:hover{
+    cursor: pointer;
+}
+.results-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.results-container .movie-card{
+    display: flex;
+    flex-direction: column;
+     height: 50vh;
+    width: 20%;
+    align-items: center;
+    color: white;
+    margin: 10px 10px;
+    background-color: rgba(0,0,0,.5);
+    
+}
+.results-container .movie-card img{
+    height: 250px;
+    border-radius: 50%;
+    margin: 5% 0;
+}
+.results-container .movie-card .card-body{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    width: 100%;
+   
+}
+.results-container .movie-card .card-body .buttons{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+
+}
+.results-container .movie-card .card-body .buttons button:hover{
+    cursor: pointer;
+}
+.results-container .movie-card .card-body .buttons .details-button{
+    background-color: transparent;
+    padding: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    
+    
+}
+.results-container .movie-card .card-body .buttons .details-button:hover{
+    background-color: white;
+    color: black;
+}
+.results-container .movie-card .card-body .buttons .like-button{
+    background-color:transparent;
+     border: none;
+     margin: 0 15px;
+     color: white;
+} 
+.results-container .movie-card .card-body .buttons .like-button i{
+    font-size: 1.5rem;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.5);
+    width: 30vw;
+    height: 40vh;
+    margin: 10% 30%;
+
+}
+.container span{
+    font-size: 2rem;
+    color: white;
+}
+.container .error{
+font-size: 1.5rem;
+color: white;
+}
+
+/* Meal Details */
+.meal-details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 20%;
+    color: white;
+    width: 80%;
+    background-color: rgba(0,0,0,.5);
+}
+.meal-details-container  .close-btn img{
+height: 30px;
+width: 30px;
+
+ 
+}
+.meal-details-container  .meal-details-highlight{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.meal-details-container  .meal-details-highlight .meal-thumbail img{
+    height: 250px;
+}
+.meal-details-container  .meal-details-highlight .details h6{
+    margin: 10px 0;
+    
+}
+.meal-details-container  .meal-details-highlight .details .text-center{
+   margin: 10px 0;
+   width: 40%;
+   padding: 2px 2px;
+   border: 1px solid white;
+   border-radius: 10px;
+   background-color: rgba(0,0,0,.2);
+}
+.meal-details-container  .meal-details-highlight .details .text-center a{
+    text-decoration: none;
+    color: white;
+}
+ 
+/* Footer */
+.footer{
+    position: fixed;
+    bottom: 0;
+    /* background-color:darkslategrey ; */
+    background-color: rgba(0,0,0,.5);
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    
+}
+ 
+.footer .details{
+    display: flex;
+
+}
+.footer .details p{
+    margin: 8px 10px;
+     
+}

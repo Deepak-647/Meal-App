@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hunger Head</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  </head>
+  <body>
+    
+
+    <!-- NAVBAR SECTION -->
+    <div id="navbar" class="navbar">
+      <div class="left-side">
+        <div class="heading">
+          <h1>Hunger<span>head</span></h1>
+        </div>
+      </div>
+      <lord-icon
+        src="https://cdn.lordicon.com/fevpdbjk.json"
+        trigger="loop"
+        delay="1000"
+        colors="primary:#121331,secondary:#3a3347,tertiary:#646e78,quaternary:#ffc738,quinary:#2ca58d,senary:#f9c9c0,septenary:#f24c00,octonary:#ebe6ef"
+        style="width: 70px; height: 70px"
+      >
+      </lord-icon>
+      <div class="right-side">
+        <button id="favourite-list-btn" class="favourite-list-btn"
+        type="button"
+        id="fav-btn" 
+        onclick="showFavMealList()">
+        <lord-icon
+    src="https://cdn.lordicon.com/iwaotjbp.json"
+    trigger="loop"
+    delay="1000"
+    colors="primary:#e8b730,secondary:#ebe6ef"
+    style="width:50px;height:50px">
+</lord-icon>
+      
+      </button>
+        
+      </div>
+    </div>
+
+    <!-- Fav LIST -->
+    
+      <div id="fav-list" class="fav-list">
+        <div class="fav-header">
+          <h2>Favourite List</h2>
+          <button id="fav-close-btn" class="fav-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="fav-list-body" class="fav-list-body">
+
+        </div>
+        </div>
+  
+
+
+
+    <!-- SEARCH SECTION -->
+    <div id="search-container" class="search-container">
+      <h1>Get Your Meal!</h1>
+      <div class="search-box">
+        <input id="input-field" type="text" placeholder="Search.."/>
+        <button class="Search-btn" onclick="showMealList()">
+          <lord-icon
+          src="https://cdn.lordicon.com/osbjlbsb.json"
+          trigger="hover"
+          colors="outline:#121331,secondary:#ffffff,secondary2:#ffffff,quaternary:#000000"
+          style="width:30px;height:30px">
+      </lord-icon>
+        </button>
+      </div>
+      <h2>Your Search results :</h2>
+      
+    </div>
+    <!-- RESULTS SECTION -->
+    <div id="results-container" class="results-container">
+      
+    </div>
+     
+   
+ 
+
+    <!-- Footer Section -->
+    <div id="footer" class="footer">
+      <h3>Created By Mr.Deepak</h3>
+      <div class="details">
+        <p>Email: dbehera647@gmail.com</p>
+        <p>Phone: 9439511099</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
